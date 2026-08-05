@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e1a31" />
+  <meta name="description" content="Crivela — uma rede criativa para descobrir, publicar e salvar campanhas publicitárias." />
+  <title>Crivela — Ideias que brilham</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <button class="icon-button mobile-only" id="menuButton" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="brand" href="#" aria-label="Crivela - início">
+      <span class="brand-crop">
+        <img src="assets/logo-crivela.png" alt="Crivela — ideias que brilham" />
+      </span>
+    </a>
+
+    <label class="search-box" for="globalSearch">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65A8 8 0 1 1 3 11a8 8 0 0 1 16 0Z"/></svg>
+      <input id="globalSearch" type="search" placeholder="Buscar campanha, marca, criador..." autocomplete="off" />
+      <kbd>⌘ K</kbd>
+    </label>
+
+    <div class="topbar-actions">
+      <button class="icon-button notification-button" aria-label="Notificações">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="notification-dot"></span>
+      </button>
+      <button class="publish-button" id="openPublishModal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        <span>Publicar campanha</span>
+      </button>
+      <button class="profile-button" aria-label="Abrir perfil">
+        <span class="avatar avatar-purple">MC</span>
+        <span class="profile-copy"><strong>Marina Costa</strong><small>Diretora de arte</small></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#" class="nav-item active"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg></span><span>Descobrir</span></a>
+        <a href="#trending" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 16l4-5 3 3 5-7"/></svg></span><span>Em alta</span><span class="nav-badge">12</span></a>
+        <a href="#collections" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></span><span>Coleções</span></a>
+        <a href="#following" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>Seguindo</span></a>
+        <a href="#messages" class="nav-item"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"/></svg></span><span>Mensagens</span><span class="nav-badge accent">3</span></a>
+      </nav>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">SEUS ESPAÇOS</div>
+        <a href="#" class="space-item"><span class="space-dot pink"></span>Direção de arte</a>
+        <a href="#" class="space-item"><span class="space-dot cyan"></span>Social media</a>
+        <a href="#" class="space-item"><span class="space-dot lime"></span>Branding</a>
+        <button class="space-item add-space"><span>+</span>Criar espaço</button>
+      </div>
+
+      <div class="pro-card">
+        <div class="pro-orbit"><span></span></div>
+        <small>CRIVELA PRO</small>
+        <h3>Mais alcance para suas ideias.</h3>
+        <p>Portfólio avançado, métricas e destaque no feed.</p>
+        <button>Conhecer o Pro</button>
+      </div>
+
+      <div class="sidebar-footer">
+        <a href="#">Sobre</a><a href="#">Carreiras</a><a href="#">Termos</a><a href="#">Ajuda</a>
+        <span>© 2026 Crivela</span>
+      </div>
+    </aside>
+
+    <main class="feed">
+      <section class="hero-card">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span></span> O radar criativo da publicidade</div>
+          <h1>Campanhas que <em>acendem</em> novas ideias.</h1>
+          <p>Descubra referências, acompanhe profissionais e compartilhe os trabalhos que fazem a indústria se mover.</p>
+          <div class="hero-actions">
+            <button class="primary-cta" id="heroPublishButton">Compartilhar projeto <span>↗</span></button>
+            <button class="secondary-cta" id="scrollToFeed">Explorar campanhas</button>
+          </div>
+          <div class="hero-metrics">
+            <div><strong>18,4k</strong><span>campanhas</span></div>
+            <div><strong>6,2k</strong><span>criativos</span></div>
+            <div><strong>92</strong><span>novas hoje</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="spark-card spark-card-one"><span>OOH</span><strong>IDEIAS<br>NA RUA</strong></div>
+          <div class="spark-card spark-card-two"><span>CASE</span><strong>BRILHA<br>FORA DA<br>BOLHA</strong></div>
+          <div class="spark-card spark-card-three"><span>FILM</span><strong>PLAY<br>THE<br>FEELING</strong></div>
+          <div class="hero-spark">✦</div>
+        </div>
+      </section>
+
+      <section class="stories-section" aria-label="Destaques">
+        <div class="section-heading compact">
+          <div><span class="section-kicker">NA SUA REDE</span><h2>Radar criativo</h2></div>
+          <button class="text-button">Ver todos <span>→</span></button>
+        </div>
+        <div class="story-row" id="storyRow"></div>
+      </section>
+
+      <section class="feed-section" id="campaignFeed">
+        <div class="section-heading feed-heading">
+          <div><span class="section-kicker">SELEÇÃO PARA VOCÊ</span><h2>Campanhas em destaque</h2></div>
+          <div class="view-switch" role="group" aria-label="Modo de visualização">
+            <button class="active" data-view="list" aria-label="Visualização em lista"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+            <button data-view="grid" aria-label="Visualização em grade"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></button>
+          </div>
+        </div>
+
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-chip active" data-category="Todos">Para você</button>
+          <button class="filter-chip" data-category="Branding">Branding</button>
+          <button class="filter-chip" data-category="Social">Social</button>
+          <button class="filter-chip" data-category="Filme">Filmes</button>
+          <button class="filter-chip" data-category="OOH">OOH</button>
+          <button class="filter-chip" data-category="Digital">Digital</button>
+          <button class="filter-chip" data-category="Experiência">Experiência</button>
+        </div>
+
+        <div class="campaign-list" id="campaignList"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span>✦</span>
+          <h3>Nenhuma campanha encontrada</h3>
+          <p>Tente uma busca diferente ou publique a primeira ideia desta categoria.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right-panel">
+      <section class="panel-card trend-panel" id="trending">
+        <div class="panel-title"><div><span>AGORA</span><h3>Assuntos em alta</h3></div><button aria-label="Mais opções">•••</button></div>
+        <div class="trend-list" id="trendList"></div>
+      </section>
+
+      <section class="panel-card brief-card">
+        <div class="brief-glow"></div>
+        <span class="mini-label">BRIEF DA SEMANA</span>
+        <h3>Como uma marca de café pode fazer a manhã virar cultura?</h3>
+        <p>Crie um conceito em até 3 telas e entre no mural colaborativo.</p>
+        <div class="brief-meta"><span>38 participações</span><strong>4 dias</strong></div>
+        <button id="briefButton">Participar do desafio <span>↗</span></button>
+      </section>
+
+      <section class="panel-card creators-panel">
+        <div class="panel-title"><div><span>TALENTOS</span><h3>Criativos para seguir</h3></div><button class="text-button">Ver todos</button></div>
+        <div class="creator-list" id="creatorList"></div>
+      </section>
+
+      <section class="newsletter-card">
+        <span>✦</span>
+        <div><strong>Uma dose de repertório.</strong><p>5 campanhas e 1 provocação criativa, toda quinta.</p></div>
+        <form id="newsletterForm"><input type="email" aria-label="Seu e-mail" placeholder="seu@email.com" required /><button aria-label="Assinar">→</button></form>
+      </section>
+    </aside>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Navegação mobile">
+    <button class="active"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg><span>Início</span></button>
+    <button><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 16l4-5 3 3 5-7"/></svg><span>Em alta</span></button>
+    <button class="mobile-create" id="mobilePublishButton"><span>+</span></button>
+    <button><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg><span>Salvos</span></button>
+    <button><svg viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg><span>Perfil</span></button>
+  </nav>
+
+  <div class="modal-backdrop" id="publishModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="publishTitle">
+      <button class="modal-close" id="closePublishModal" aria-label="Fechar">×</button>
+      <div class="modal-header">
+        <span class="modal-icon">✦</span>
+        <div><small>NOVA PUBLICAÇÃO</small><h2 id="publishTitle">Compartilhe uma campanha</h2><p>Monte um post rápido para apresentar o projeto à comunidade.</p></div>
+      </div>
+      <form id="publishForm">
+        <div class="form-grid">
+          <label class="field field-full"><span>Título da campanha</span><input name="title" required maxlength="80" placeholder="Ex.: O sabor de estar junto" /></label>
+          <label class="field"><span>Marca</span><input name="brand" required maxlength="40" placeholder="Nome da marca" /></label>
+          <label class="field"><span>Categoria</span><select name="category"><option>Branding</option><option>Social</option><option>Filme</option><option>OOH</option><option>Digital</option><option>Experiência</option></select></label>
+          <label class="field field-full"><span>Descrição</span><textarea name="description" required maxlength="220" rows="3" placeholder="Conte o insight, a ideia e o que torna este trabalho especial..."></textarea></label>
+          <label class="field field-full"><span>Direção visual</span><div class="art-picker" id="artPicker"></div><input type="hidden" name="art" value="aurora" /></label>
+        </div>
+        <div class="modal-footer"><button type="button" class="cancel-button" id="cancelPublish">Cancelar</button><button type="submit" class="submit-button">Publicar campanha <span>↗</span></button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><p></p></div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
